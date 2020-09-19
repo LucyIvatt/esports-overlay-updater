@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <VBox prefHeight="200.0" prefWidth="100.0">
+      <VBox alignment="TOP_RIGHT" prefHeight="356.0" prefWidth="430.0" spacing="20.0">
          <children>
-            <Label text="Team One Name" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="100.0" text="Team One Name:" />
+                  <TextField fx:id="teamOneName" prefHeight="25.0" prefWidth="293.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="100.0" text="Team One Score:" />
+                  <TextField fx:id="teamOneScore" prefHeight="25.0" prefWidth="55.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefWidth="100.0" text="Team Two Name:" />
+                  <TextField fx:id="teamTwoName" prefHeight="25.0" prefWidth="293.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefWidth="100.0" text="Team Two Score:" />
+                  <TextField fx:id="teamTwoScore" prefHeight="25.0" prefWidth="55.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefWidth="100.0" text="Event Stage:" />
+                  <TextField fx:id="eventStage" prefHeight="25.0" prefWidth="293.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="updateButton" mnemonicParsing="false" onMouseClicked="#onUpdateClicked" text="Update Values" />
+               </children>
+            </HBox>
          </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
       </VBox>
-      <VBox prefHeight="200.0" prefWidth="100.0" />
    </children>
 </HBox>

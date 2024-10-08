@@ -1,5 +1,5 @@
-# Valorant-Overlay-Updater
-Simple program to save values to .txt files for OBS to read during valorant tournament streams.
+# esports-overlay-updater
+Very basic program to save values to .txt files for OBS to read during university esports tournament streams.
 
 <div align="center">
   <l>
